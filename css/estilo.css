@@ -1,0 +1,778 @@
+/*Body*/
+.eliminarFila {
+    display: none;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color:#3571FC;
+    font-family: 'calibri';
+}
+
+body::-webkit-scrollbar { /*Para cambiarle el estilo a la barra de scroll*/
+    width: 10px;
+    background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 3px;
+}
+
+/*Header: Logo y barra de navegacion*/
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: black;
+    border-bottom: 5px solid #002987;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logoPagina {
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    padding-top: 3px;
+}
+
+.menuLogo {
+    margin-right: 12px;
+}
+
+nav {
+    display: block;
+    width: 100%;
+}
+
+.barraNavegacion {
+    display: none;
+}
+
+.mostrarBarraNav{
+    display: block;
+    width: 100%;
+    margin: 10px;
+    background-color: black;
+    padding-left: 0;
+    text-align: center;
+}
+
+.header ul.mostrarBarraNav li {
+    list-style: none;
+    margin: 5px 25px 5px 5px;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px;
+    border-bottom: solid 3px #3571FC;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Contenido*/
+main.contenido {
+    display: block;
+    justify-content: space-around;
+}
+
+/*Secciones: Series mas vistas, series recomendadas*/
+.seccion {
+    width: auto;
+    margin: 8px 5px;
+    border: solid white 2px;
+    border-radius: 15px;
+    background-color: #0047EB;
+    text-align: center;
+}
+
+.tituloSecciones {
+    font-size: 25px;
+    background-color: black;
+    color: white;
+}
+
+.portadasPeliculasSeries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+}
+
+.portadasPeliculasSeries img {
+    width: 100px;
+    height: 150px;  
+    border-radius: 8px;
+    margin: 5px;
+}
+
+/*Publicidad*/
+.publicidad {
+    display: none;
+}
+
+/*Div ESTADISTICAS*/
+.estadisticas {
+    width: 86%;
+    margin: 5px;
+    padding: 5px 20px 20px 20px;
+    text-align: center;
+    background-color: #0047EB;
+    border: solid 2px white;
+    border-radius: 15px;
+}
+
+table.tablaEstadisticas {
+    border-collapse: collapse;
+    border: solid 2px black;
+    width: 70%;
+    margin: auto;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+tbody {
+    background-color: white;
+    color: black;
+}
+
+td {
+    border-bottom: solid 2px black;
+}
+
+table.tablaEstadisticas tbody img{
+    width: 15px;
+}
+.resaltarFila {
+    background-color: yellow;
+}
+
+form.formTabla2019 h4 {
+    font-size: 15px;
+    color: white;
+}
+
+form.formTabla2019 input {
+    width: 80%;
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 3px;
+    text-align: center;
+}
+
+form.formTabla2019 button {
+    width: 80px;
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+.inputFiltro {
+    width: 40%;
+    height: 30px;
+    margin: 5px;
+    border: solid 2px black;
+    text-align: center;
+}
+
+.iconosTabla {
+    width: 15px;
+    cursor: pointer;
+}
+
+.esconderSeries {
+    display: none;
+}
+
+/*Footer*/
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.textoFooter {
+    padding-bottom: 15px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    order: 1;
+}
+
+.redesSociales {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 50%;
+    padding-right: 20px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    order: -1;
+}
+
+.imgRedesSociales {
+    width: 35px;
+    height: 30px;
+    padding: 0 10px;
+}
+
+/*PELICULAS.html y SERIES.html-----------------------------------------------------------------------------------------*/
+/*Tambien llevan los estilos de los contenedores "seccionesPeliculasSeries" y "seccion" (los mismos que estan en index)*/
+.generos {
+    display: none
+}
+
+/*REGISTRO.html-------------------------------------------------------------------------------------------------------*/
+.contenedorRegistro {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    border: solid white 2px;
+    margin: 5px;
+}
+
+.formRegistro {
+    text-align: center;
+    background-color: #3571FC;
+    margin: 10px 0;
+    padding: 0 20px;
+    border-radius: 8px;
+}
+
+.tituloRegistro {
+    font-size: 25px;
+    color: white;
+}
+
+.inputForm {
+    width: 80%;
+    background-color: black;
+    color: white;
+    padding: 10px 30px 10px 10px;
+    margin-bottom: 10px;
+    border: solid white 2px;
+    font-size: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.labelInput {
+    display: block;
+    font-size: 15px;
+    padding-top: 7px;
+}
+
+.divCaptcha{
+    padding: 0px 25px;
+    margin: 10px;
+    border-radius: 20px;
+    border: solid black 2px;
+}
+
+.inputCaptcha {
+    width: 50%;
+    background-color: white;
+    color: black;
+    padding: 10px 30px 10px 10px;
+    margin-bottom: 10px;
+    border: solid black 2px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.botonSubmit {
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: 30px;
+    border: solid #3571FC 2px; 
+    margin: 10px;
+}
+
+.captchaSinResolver { /*Le da color de fondo inicial al div del captcha*/
+    background-color: white;
+}
+
+.captchaCorrecto { /*Le da color de fondo al div del captcha si el usuario ingresa el resultado correcto*/
+    background-color: #1EFD1E ;
+}
+
+.captchaIncorrecto { /*Le da color de fondo al div del captcha si el usuario ingresa el resultado incorrecto*/
+    background-color: #FF3C32;
+}
+
+@media only screen and (min-width: 455px) and (max-width: 768px){
+    /*Secciones: Series mas vistas, series recomendadas*/
+    .portadasPeliculasSeries img {
+        width: 80px;
+        height: 120px;  
+        margin: 5px 1px;
+    }
+
+    /*Div ESTADISTICAS*/
+    .estadisticas {
+        width: auto;
+    }
+
+    .divTabla {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    form.formTabla2019 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+
+    form.formTabla2019 h4 {
+        text-align: center;
+    }
+
+    form.formTabla2019 button {
+        width: 130px;
+        height: 30px;
+    }
+
+    .footer {
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .textoFooter {
+        order: 0;
+        width: 40%;
+        margin: 0 5px;
+        padding-top: 10px;
+    }
+
+    .redesSociales {
+        order: 1;
+        width: 15%;
+        margin: 12px ;
+    }
+}/*Cierro la media querie*/
+
+@media only screen and (min-width: 769px) and (max-width: 1193px){
+    /*Body*/
+    body {
+        padding: 0;
+        margin: 0;
+        padding-top: 5.3em;
+        background-color:#3571FC;
+        font-family: 'calibri';
+    }
+
+    /*Header: Logo y barra de navegacion*/
+    header {
+        position: fixed;
+        top: 0;
+    }
+    
+    /*Header: Logo y barra de navegacion*/
+    .menuLogo {
+        display: none;
+    }
+
+    nav {
+        width: 40%;
+        margin: 0 40px 0 0;
+    }
+
+    .barraNavegacion {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 10px;
+        background-color: black;
+        padding-left: 0;
+    }
+    
+    .header ul.barraNavegacion li {
+        list-style: none;
+        margin: 5px 5px;
+        color: white;
+        text-transform: uppercase;
+        padding: 15px;
+        transition: background-color .5s;
+    }
+
+    .header ul.barraNavegacion li:hover {
+        background-color: #002987;
+        cursor: pointer;
+    }
+   
+    /*Contenido*/
+    main.contenido {
+        display: flex;
+    }
+
+    /*Secciones: Series mas vistas, series recomendadas*/
+    .seccionesPeliculasSeries {
+        flex-grow: 1;
+    }
+
+    .portadasPeliculasSeries img {
+        width: 80px;
+        height: 125px;  
+        margin: 2px 2px 18px 2px;
+    }
+
+    .portadasPeliculasSeries img:hover {
+        filter: brightness(50%);
+        box-shadow: 2px 2px 5px black;
+    }
+
+    /*Publicidad*/
+    .publicidad {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #0047EB;
+        width: 25%;
+        border: solid white 2px;
+        margin: 8px 5px;
+    }
+
+    .publicidad img {
+        width: 100%;
+        height: 150px;
+    }
+
+    /*Div ESTADISTICAS*/
+    .estadisticas {
+        width: auto;
+    }
+
+    .divTabla {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    table.tablaEstadisticas {
+        height: 250px;
+        margin: auto;        
+    }
+
+    
+    form.formTabla2019 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+
+    form.formTabla2019 h4 {
+        font-size: 25px;
+        text-align: center;
+        width: 100%;
+    }
+
+    form.formTabla2019 input {
+        display: block;
+        height: 40px;
+        font-weight: bold;
+    }
+
+    form.formTabla2019 button {
+        width: 130px;
+        height: 40px;
+        margin: 10px 40px;
+    }
+
+     /*Footer*/
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .textoFooter {
+        display: block;
+        width: 35%;
+        order: -1;
+        padding-right: 240px;
+        padding-top: 15px;
+        margin: 0;
+    }
+
+    .redesSociales {
+        width: 15%;
+        order: 1;
+        margin: 0;
+    }
+
+    /*PELICULAS.html y SERIES.html-----------------------------------------------------------------------------------------*/
+    /*Tambien llevan los estilos de los contenedores "seccionesPeliculasSeries" y "seccion" (los mismos que estan en index)*/
+    .generos {
+        display: block;
+        width: 170px;
+        height: auto;
+        border-radius: 15px;
+        border: solid white 2px;
+        margin: 8px 5px;
+        text-align: center;
+        background-color: #0047EB;
+    }
+    
+    .listaGeneros {
+        list-style: none;
+        padding-right: 35px;
+    }
+    
+    .generos ol.listaGeneros li{
+        background-color: white;
+        color: black;
+        padding: 5px;
+        border: outset black 2px;
+        margin: 1px 0;
+        border-radius: 8px;
+    }
+
+    /*REGISTRO.html-------------------------------------------------------------------------------------------------------*/
+    .contenedorRegistro {
+        background-image: url(images/fondoRegistro.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .formRegistro {
+        width: 60%;
+    }
+
+    .divCaptcha{
+        width: 70%;
+        margin: auto;
+    }
+}/*Cierro la media querie*/
+
+@media only screen and (min-width: 1194px){
+    /*Body*/
+    body {
+        padding: 0;
+        margin: 0;
+        padding-top: 5.3em;
+        background-color:#3571FC;
+        font-family: 'calibri';
+    }
+
+    /*Header: Logo y barra de navegacion*/
+    header {
+        position: fixed;
+        top: 0;
+    }
+
+    .menuLogo {
+        display: none;
+    }
+
+    nav {
+        width: 40%;
+        margin: 0 20px 0 0;
+    }
+
+    .barraNavegacion {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin: 10px;
+        background-color: black;
+        padding-left: 0;
+    }
+    
+    .header ul.barraNavegacion li {
+        list-style: none;
+        margin: 5px 5px;
+        color: white;
+        text-transform: uppercase;
+        padding: 15px;
+        transition: background-color .5s;
+    }
+    
+    .header ul.barraNavegacion li:hover {
+        background-color: #002987;
+        cursor: pointer;
+    }
+
+    /*Contenido*/
+    main.contenido {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /*Secciones: Series mas vistas, series recomendadas*/
+    .seccionesPeliculasSeries {
+        flex-grow: 1;
+    }
+
+    .portadasPeliculasSeries img {
+        width: 120px;
+        height: 150px;  
+        margin: 2px 2px 4px 2px;
+    }
+
+    .portadasPeliculasSeries img:hover {
+        filter: brightness(50%);
+        box-shadow: 2px 2px 5px black;
+    }
+
+    /*Publicidad*/
+    .publicidad {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #0047EB;
+        width: 25%;
+        border: solid white 2px;
+        margin: 8px 5px;
+    }
+
+    .publicidad img {
+        width: 100%;
+        height: 150px;
+    }
+
+     /*Footer*/
+     .footer {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+     }
+
+    .textoFooter {
+        width: 30%;
+        padding-top: 15px;
+        order: 0;
+        margin: 0;
+        font-size: 17px;
+    }
+    
+    .redesSociales {
+        width: 15%;
+        order: 1;
+        margin: 15px 0;
+    }
+
+    /*Div ESTADISTICAS*/
+    .estadisticas {
+        width: auto;
+        margin: 5px;
+        padding: 5px 20px 20px 20px;
+        text-align: center;
+        background-color: #0047EB;
+        border: solid 2px white;
+        border-radius: 15px;
+    }
+
+    .divTabla {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    table.tablaEstadisticas {
+        margin: auto;
+        border-collapse: collapse;
+        border: solid 2px black;
+    }
+
+    td, th {
+        padding: 10px;
+    }
+
+    form.formTabla2019 {
+        display: block;
+        margin: auto;
+    }
+
+    form.formTabla2019 h4 {
+        font-size: 25px;
+        color: white;
+        text-align: center;
+    }
+
+    form.formTabla2019 input {
+        display: block;
+        width: 50%;
+        height: 30px;
+        background-color: black;
+        color: white;
+        border: solid 1px white;
+        border-radius: 5px;
+        padding: 5px;
+        margin: auto;
+        margin-top: 3px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    form.formTabla2019 button {
+        width: 130px;
+        height: 40px;
+        margin: 10px 15px;
+        background-color: white;
+        color: black;
+        border: solid 1px black;
+        border-radius: 5px;
+    }
+
+    /*PELICULAS.html y SERIES.html-----------------------------------------------------------------------------------------*/
+    /*Tambien llevan los estilos de los contenedores "seccionesPeliculasSeries" y "seccion" (los mismos que estan en index)*/
+    .generos {
+        display: block;
+        width: 170px;
+        height: auto;
+        border-radius: 15px;
+        border: solid white 2px;
+        margin: 8px 5px;
+        text-align: center;
+        background-color: #0047EB;
+    }
+    
+    .listaGeneros {
+        list-style: none;
+        padding-right: 35px;
+    }
+    
+    .generos ol.listaGeneros li{
+        background-color: white;
+        color: black;
+        padding: 5px;
+        border: outset black 2px;
+        margin: 3px 0;
+        border-radius: 8px;
+    }
+
+    /*REGISTRO.html-------------------------------------------------------------------------------------------------------*/
+    .contenedorRegistro {
+        background-image: url(images/fondoRegistro.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .formRegistro {
+        width: 60%;
+        margin: 65px 0;
+    }
+
+    .divCaptcha{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}/*Cierro la media querie*/
