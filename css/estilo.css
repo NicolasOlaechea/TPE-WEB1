@@ -1,7 +1,4 @@
 /*Body*/
-.eliminarFila {
-    display: none;
-}
 body {
     padding: 0;
     margin: 0;
@@ -123,7 +120,7 @@ main.contenido {
     border-radius: 15px;
 }
 
-table.tablaEstadisticas {
+.tablaEstadisticas {
     border-collapse: collapse;
     border: solid 2px black;
     width: 70%;
@@ -144,9 +141,6 @@ td {
     border-bottom: solid 2px black;
 }
 
-table.tablaEstadisticas tbody img{
-    width: 15px;
-}
 .resaltarFila {
     background-color: yellow;
 }
@@ -173,23 +167,6 @@ form.formTabla2019 button {
     color: black;
     border: solid 1px black;
     border-radius: 5px;
-}
-
-.inputFiltro {
-    width: 40%;
-    height: 30px;
-    margin: 5px;
-    border: solid 2px black;
-    text-align: center;
-}
-
-.iconosTabla {
-    width: 15px;
-    cursor: pointer;
-}
-
-.esconderSeries {
-    display: none;
 }
 
 /*Footer*/
@@ -410,7 +387,6 @@ form.formTabla2019 button {
 
     .header ul.barraNavegacion li:hover {
         background-color: #002987;
-        cursor: pointer;
     }
    
     /*Contenido*/
@@ -462,7 +438,7 @@ form.formTabla2019 button {
         justify-content: center;
     }
 
-    table.tablaEstadisticas {
+    table {
         height: 250px;
         margin: auto;        
     }
@@ -605,7 +581,6 @@ form.formTabla2019 button {
     
     .header ul.barraNavegacion li:hover {
         background-color: #002987;
-        cursor: pointer;
     }
 
     /*Contenido*/
@@ -685,7 +660,7 @@ form.formTabla2019 button {
         justify-content: center;
     }
 
-    table.tablaEstadisticas {
+    table {
         margin: auto;
         border-collapse: collapse;
         border: solid 2px black;

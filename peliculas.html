@@ -1,4 +1,30 @@
-<!--Div contenido, contiene:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Home | Peliculas</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/barraNavegacionResponsive.js"></script>
+</head>
+<body>
+    <!-- Header, contiene: 
+        -un logo
+        -barra de navegacion-->
+    <header class="header">
+        <a href="index.html"><img class="logoPagina" src="images/logoPagina.png" alt="Logo Pagina"></a>
+        <img id="menuLogo" src="images/menu-logo.png" alt="Menu-logo" class="menuLogo">
+        <nav>
+            <ul id="barraNav" class="barraNavegacion">
+                <a href="index.html"><li>Inicio</li></a>
+                <a href="peliculas.html"><li>Peliculas</li></a>
+                <a href="series.html"><li>Series</li></a>
+                <a href="registro.html"><li>Registro</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Div contenido, contiene:
     -div secciones peliculas (contiene divs correspondiente a cada seccion)
     div generos (contiene una LISTA con los generos)-->
     <main class="contenido">
@@ -10,7 +36,7 @@
                     <img src="images/peliculas/elHombreInvisible.jpg" alt="El hombre invisible">
                     <img src="images/peliculas/mulanjpeg.jpeg" alt="Mulan">
                     <img src="images/peliculas/elRoboDelSiglo.jpg" alt="El robo del siglo">
-                    <img src="images/peliculas/theBatman.jpg" alt="The Batman">
+                    <img src="images/peliculas/bloodShot.jpg" alt="Bloofshot">
                     <img src="images/peliculas/unLugarEnSilencio.jpg" alt="Un lugar en silencio">
                     <img src="images/peliculas/sonicLaPelicula.jpg" alt="Sonic la pelicula">
                 </div>
@@ -84,3 +110,18 @@
         </aside>
 
     </main>
+
+     <!--Div footer, contiene:
+        -h4 con texto
+        -botonera con los iconos de las redes sociales-->
+    <footer class="footer">
+        <h4 class="textoFooter">Todos los derechos reservados | Cine Home</h4>
+        
+        <ul class="redesSociales">
+            <li><a target="blank" href="https://es-la.facebook.com/"><img class="imgRedesSociales" src="images/facebook.png" alt="Facebook"></a></li>
+            <li><a target="blank" href="https://www.instagram.com/"><img class="imgRedesSociales" src="images/instagram.png" alt="Instagram"></a></li>
+            <li><a target="blank" href="https://twitter.com/"><img class="imgRedesSociales" src="images/twitter.png" alt="Twitter"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
